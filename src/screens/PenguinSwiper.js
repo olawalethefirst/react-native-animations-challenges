@@ -24,7 +24,7 @@ const scaleMonitor = 35;
 const primaryBlue = '#94C0F4';
 const secondaryBlue = '#2574DE';
 
-const PenguinSwiper = ({ navigation: { goBack } }) => {
+export default function PenguinSwiper({ navigation: { goBack } }) {
     const { width } = useWindowDimensions();
     const slideWidth = width - sliderSize - 2 * margin - scaleMonitor;
     const sliderWithSlideContainer = slideWidth + sliderSize;
@@ -140,9 +140,7 @@ const PenguinSwiper = ({ navigation: { goBack } }) => {
             </View>
         </ScreenContainer>
     );
-};
-
-export default PenguinSwiper;
+}
 
 const styles = StyleSheet.create({
     container: {

@@ -1,9 +1,9 @@
-import { StyleSheet, ScrollView, View } from 'react-native';
+import { StyleSheet, ScrollView, } from 'react-native';
 import HomeButton from '../components/HomeButton';
 import screens from '../navigators/screens';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-const Home = ({ navigation: { navigate } }) => {
+export default function Home({ navigation: { navigate } }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView contentContainerStyle={styles.contentContainer}>
@@ -18,9 +18,7 @@ const Home = ({ navigation: { navigate } }) => {
             </ScrollView>
         </SafeAreaView>
     );
-};
-
-export default Home;
+}
 
 const styles = StyleSheet.create({
     container: {

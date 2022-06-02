@@ -1,11 +1,11 @@
 import ChanelListScreen from '../screens/ChanelList';
 import PenguinSwiperScreen from '../screens/PenguinSwiper';
-import NativePanResponderScreen from '../screens/NativePanResponder';
+import NativePanResponderScreen from '../screens/ImagePanResponder';
 
 const screens = [
     {
-        name: 'NativePanResponder',
-        description: 'Native PanResponder Implementation',
+        name: 'ImagePanResponder',
+        description: 'Image Pan Responder',
         component: NativePanResponderScreen,
     },
     {

@@ -13,7 +13,7 @@ import ChanelItem, { imageBigHeight, height } from '../components/ChanelItem';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import ScreenContainer from '../components/ScreenContainer';
 
-const ChanelList = ({ navigation: { goBack } }) => {
+export default function ChanelList({ navigation: { goBack } }) {
     const { top } = useSafeAreaInsets();
     const scrollY = useSharedValue(0);
     const onScroll = useAnimatedScrollHandler((e) => {
@@ -68,9 +68,7 @@ const ChanelList = ({ navigation: { goBack } }) => {
             />
         </ScreenContainer>
     );
-};
-
-export default ChanelList;
+}
 
 const styles = StyleSheet.create({
     container: {
